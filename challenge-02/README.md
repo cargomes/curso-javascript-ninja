@@ -4,29 +4,60 @@ Nesse exercício, você está livre para escolher os nomes para suas variáveis 
 
 ```js
 // Crie uma função que receba dois argumentos e retorne a soma dos mesmos.
-?
+function soma(x,y) {
+
+	return x + y;
+}
 
 // Declare uma variável que receba a invocação da função criada acima, passando dois números quaisquer por argumento, e somando `5` ao resultado retornado da função.
-?
+var total = soma( 5, 5);
+total += 5;
 
 // Qual o valor atualizado dessa variável?
-?
+
+ total = 15
 
 // Declare uma nova variável, sem valor.
-?
+ 
+ var comida;
+
+ // outro exemplo:
+
+ var materias;
 
 /*
 Crie uma função que adicione um valor à variável criada acima, e retorne a string:
     O valor da variável agora é VALOR.
 Onde VALOR é o novo valor da variável.
 */
-?
+
+function verComida(){
+
+	comida = ['feijão', 'macarrão', 'arroz', "frango assado"]
+	return 'As comidas serão:' + comida + ' e saladas'
+}
+
+// outro exemplo:
+
+function estudar(){
+materias  = ['html', 'css', 'javascript', 'c#', 'sql'];
+return 'Estudar as seguintes matérias:' + materias + ', ok Carluxo';}
+
+estudar();
+'Estudar as seguintes matérias:html,css,javascript,c#,sql, ok Carluxo'  //resultado
+
+
+
 
 // Invoque a função criada acima.
-?
+verComida();
+
+// outro exemplo:
+estudar();
+'Estudar as seguintes matérias:html,css,javascript,c#,sql, ok Carluxo'  //resultado
 
 // Qual o retorno da função? (Use comentários de bloco).
-?
+/* o valor das variáveis retornaram uma string */
 
 /*
 Crie uma função com as seguintes características:
@@ -35,19 +66,26 @@ Crie uma função com as seguintes características:
     Preencha todos os valores corretamente!
 3. O retorno da função deve ser a multiplicação dos 3 argumentos, somando `2` ao resultado da multiplicação.
 */
-?
+function newFunction(a,b,c) {
+	if( a === undefined || b === undefined || c === undefined){
+		return 'Preencha todos os valores!';}
+
+		return (a * b * c) + 2;
+
+}
 
 // Invoque a função criada acima, passando só dois números como argumento.
-?
+newFunction(1,2);
 
 // Qual o resultado da invocação acima? (Use comentários para mostrar o valor retornado).
-?
+//'Preencha todos os valores!'
+
 
 // Agora invoque novamente a função criada acima, mas passando todos os três argumentos necessários.
-?
+newFunction(1,2,3);
 
 // Qual o resultado da invocação acima? (Use comentários para mostrar o valor retornado).
-?
+// 8
 
 /*
 Crie uma função com as seguintes características:
